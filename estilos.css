@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(44, 29, 29);
+    font-family: cursive;
+    font-weight: 300;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 60px; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+    /* muy utilizado en las Apps responsive 100% */
+    width: 100%; 
+    background-color: rgb(235, 180, 78, 0.883); /*el último es la transparencia*/ 
+    background-image: url(imagenes/logokaiseki.jpg);
+    background-size: cover; /* Ajusta la imagen para que cubra todo el nav */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 180px; /* Ajusta la altura del nav según tus necesidades */
+}
+
+nav ul li {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    border: 1px solid #1fbea4;
+    color: rgb(255, 255, 255);
+    list-style-type: none; /*quitar viñetas*/
+    display: inline-block; /*Cada opción se ve una al lado de la otra*/
+    transition: 1s all; /*Tiempo del movimiento al pasar el mouse por encima*/
+    padding: 8px 13px;
+    transform: 1s;
+    margin-top: 90px;
+}
+
+nav ul li:hover {
+    background-color: #000000;
+    transform: scale(1.1);
+    transition: 1s;
+    border-radius: 27px;
+}
+
+nav ul li a {
+    /*Agregar estilos a los hipervinculos*/
+    text-decoration: none; /* quitar la línea de los hipervinculos*/
+    
+}
+
+a:visited {
+    /*Al ser visitado cambia a este color*/
+    color: #ffffff;
+}
+/*Al dar click en el enlace cambia a este color*/
+a:active {
+    color: #0e83e2;
+}
+
+/*Ir al index y en esta línea se agrega al html <a href="index.html"> <img class="img-logo" src="*/
+
+/*Estilizamos el logo*/
+.img-logo {
+    width: 70px;
+    padding-top: 20px;
+    padding-left: 1%;
+}
+
+nav ul {
+    padding-top: 90px; /*Para que el menú baje un poco de arriba hacia abajo*/
+    float: right; /*Ubica los elementos del menú de manera flotante a la derecha*/
+
+    /* volver al index y decomentar el logo principal*/
+}
+
+.banner {
+    max-width: 100%; /*Para que se ajuste al tamaño del body*/
+}
+/*Esilo para la section featured */
+.featured {
+    background-color: rgb(240, 193, 107, 0.616); /*Color de fondo para la section*/
+    display: flex;
+    justify-content: center;
+}
+
+.img-sushi{
+    display: block;
+    margin: 0;
+    height: 420px;
+    transition: 2s;
+}
+
+/*Estilizar el article featured (el párrafo) */
+.ft-articulo {
+    height: 380px;
+    padding: 1em;
+    vertical-align: top;
+}
+
+.img-sushi:hover{
+    transform: scale(1.1);
+    transition: 3s;
+}
+
+
+/* Estilo general para todos los articulos*/
+article {
+    padding: 30px;
+    background-color: rgb(240, 220, 107, 0.582);
+    margin: 20px 0; /*OPCIONAL, Para separar un poco los elementos del article. 20 arriba y*/
+}
+
+article h1 {
+    border-bottom: solid thin black; /* Subrayar el título de h1 "Recetas del mundo" */
+}
+/*Hacer que el article aparezca al lado de la imagen de sushi*/
+.ft-articulo {
+    /*Ambos en línea y en bloque*/
+    display: inline-block;
+}
+
+/*Estilizar el botón*/
+.boton-container {
+    transform: 1s;
+    text-align: center;
+    background-color: #e9e646;
+    /* Centrarse en el article*/
+    margin: 0 auto;
+    transition: background-color 2s, border-radius 2s; 
+    margin-top: 10px;
+}
+
+.boton-container a {
+    transition: 2s all;
+    text-decoration: none; /*Ningún adorno al botón */
+    color: #fff;
+    
+}
+
+.boton {
+    padding: 15px; /*Botón con más ancho*/
+}
+
+/*Para darle animación al botón al pasar el puntero del mouse*/
+
+.boton-container:hover {
+    transition: 2s;
+    background-color: #1fbea4;
+    border-radius: 30px;
+}
+
+/*Estilizar la primera imágen, o sea al plato de las diez recetas para las fiestas navideñas*/
+.art-image img {
+    max-width: 100%;
+    margin: 0;
+}
+
+.art-cont {
+    width: 40px;
+    vertical-align: top;
+    transition: transform 1.3s ease-in-out;
+}
+
+.art-cont img {
+    height: 300px;
+}
+
+.art-cont:hover{
+    transform: scale(1.1);
+}
+
+.boton-container2 {
+    float: right;
+    background-color: #e9e646;
+    padding: 19px;
+    transition: background-color 2s, border-radius 2s; 
+    margin-top: -145px;
+    margin-right:28px;
+}
+
+.boton-container2 a{
+    text-decoration: none;
+}
+
+.boton-container2:hover {
+    background-color: #1fbea4;
+    border-radius: 30px;
+}
+
+
+h2 {
+    margin: 0;
+    border-bottom: solid thin black; /*Subrayar el título de h2 "Recetas del mundo" delgadito*/
+    transition: transform 1.3s ease-in-out;
+}
+
+h2:hover{
+    font-family: cursive;
+    color: brown;
+}
+
+.boton-container3{
+    float: right;
+    background-color: #e9e646;
+    padding: 19px;
+    transition: background-color 2s, border-radius 2s; 
+    margin-top: -270px;
+    margin-right: 80px;
+    justify-content: center;
+    
+}
+
+.boton-container3 a{
+    text-decoration: none;
+}
+
+.boton-container3:hover{
+    background-color: #1fbea4;
+    border-radius: 30px;
+}
+
+
+footer {
+    background-color: rgba(129, 121, 105, 0.883);
+    color: rgb(31, 12, 134);
+    clear: both; /*Línea para limpiar y cargar elementos no flotantes*/
+    line-height: 30px;
+    text-align: center;
+    padding: 45px;
+}
